@@ -202,11 +202,11 @@ function App() {
             <h1 class="display-4 fw-bold">Resultados encontrados</h1>
             <p>
               Probabilidade de não haver recorrência:{" "}
-              {`${response.pNR.toFixed(2) * 100}%`}
+              {`${(response.pNR.toFixed(2) * 100).toFixed(2)}%`}
             </p>
             <p>
               Probabilidade de haver recorrência:{" "}
-              {`${response.pR.toFixed(2) * 100}%`}
+              {`${(response.pR.toFixed(2) * 100).toFixed(2)}%`}
             </p>
             {/* <p>
               Precisão de instâncias incorretas:{" "}
